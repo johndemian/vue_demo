@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>vue</title>
+    <script
+  src="https://browser.sentry-cdn.com/6.1.0/vue.min.js"
+  integrity="sha384-ZhUqMWRVNnMf+BalnWBZFnc647u8W2Rx20+rNjm0mJAG5m5F2BFuN1BtyUkkea0y"
+  crossorigin="anonymous"
+></script>
+
+<script>
+  Sentry.init({
+    Vue,
+    dsn: "https://examplePublicKey@o0.ingest.sentry.io/0",
+  });
+</script>
   </head>
   <body>
     <noscript>
